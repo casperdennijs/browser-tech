@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+html, body {
+    min-height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+form {
+    max-width: 500px;
+    width: 100%;
+}
+
+form fieldset {
+    padding: 1em;
+    margin: 1.5em 0;
+}
+
+form section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+form section p {
+    width: 100%;
+}
+
+form .radio {
+    overflow: hidden;
+    border-radius: 100px;
+}
+
+form .radio label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label, form input {
+    display: block;
+    width: 100%;
+}
+
+form .radio:not(:last-child) label {
+    display: flex;
+    border: 1px solid gray;
+    aspect-ratio: 1/1;
+    width: 100%;
+    position: relative;
+    justify-content: center;
+    user-select: none;
+}
+
+form .radio:not(:last-child) label:hover {
+    background-color: lightgray;
+}
+
+form .radio:not(:last-child) label:has(input:checked) {
+    background-color: rgb(202, 202, 255);
+    font-weight: bold;
+    font-size: 1.5em;
+    text-decoration: underline;
+}
+
+form .radio:not(:last-child) label:has(input:checked):before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -1000%;
+    width: 1000%;
+    background-color: rgb(202, 202, 255);;
+    pointer-events: none;
+    z-index: -1;
+}
+
+form .radio:not(:last-child) label:first-child {
+    border-radius: 100% 0 0 100%;
+}
+
+form .radio:not(:last-child) label:last-child {
+    border-radius: 0 100% 100% 0;
+}
+
+form label input[type=radio] {
+    display: none;
+}
+
+form input[type=submit] {
+    margin-top: .5em;
+}
+
+form br {
+    display: none;
+}
+
+form input[type=text]:not(:last-child) {
+    margin-bottom: 1em;
+}
+
+form .opmerkingen textarea {
+    width: 100%;
+}
+
+form .buttons {
+    display: none;
+}
+
+form .buttons.js-active {
+    display: flex;
+    justify-content: space-between;
+    margin: 1em 0 0 0;
+}

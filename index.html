@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enquête</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="./script.js" defer></script>
+</head>
+<body>
+    <h1>Enquête over de minor Web Development</h1>
+    <form method="GET" action="/submit.html">
+        <fieldset>
+            <legend>Algemene informatie</legend>
+            <label>
+                Naam
+                <input type="text" name="naam" required>
+            </label>
+            <label>
+                E-mailadress
+                <input type="text" inputmode="email" name="emailadres" required>
+            </label>
+            <label>
+                Studentennummer
+                <input type="text" inputmode="numeric" name="studentennummer" required>
+            </label>
+            <section class="buttons">
+                <button id="next">Volgende</button>
+            </section>
+        </fieldset>
+        <fieldset>
+            <legend>Web App from Scratch</legend>
+            <p>Lesstof</p>
+            <section class="radio" class="radio">
+                <label>
+                    1
+                    <input type="radio" id="1" name="lesstof" value="1">
+                </label>
+                <label>
+                    2
+                    <input type="radio" id="2" name="lesstof" value="2">
+                </label>
+                <label>
+                    3
+                    <input type="radio" id="3" name="lesstof" value="3">
+                </label>
+                <label>
+                    4
+                    <input type="radio" id="4" name="lesstof" value="4">
+                </label>
+                <label>
+                    5
+                    <input type="radio" id="5" name="lesstof" value="5">
+                </label>
+                <label>
+                    6
+                    <input type="radio" id="6" name="lesstof" value="6">
+                </label>
+                <label>
+                    7
+                    <input type="radio" id="7" name="lesstof" value="7">
+                </label>
+                <label>
+                    8
+                    <input type="radio" id="8" name="lesstof" value="8">
+                </label>
+                <label>
+                    9
+                    <input type="radio" id="9" name="lesstof" value="9">
+                </label>
+                <label>
+                    10
+                    <input type="radio" id="10" name="lesstof" value="10">
+                </label>
+            </section>
+            <p>Uitleg</p>
+            <section class="radio">
+                <label>
+                    1
+                    <input type="radio" id="1" name="uitleg" value="1">
+                </label>
+                <label>
+                    2
+                    <input type="radio" id="2" name="uitleg" value="2">
+                </label>
+                <label>
+                    3
+                    <input type="radio" id="3" name="uitleg" value="3">
+                </label>
+                <label>
+                    4
+                    <input type="radio" id="4" name="uitleg" value="4">
+                </label>
+                <label>
+                    5
+                    <input type="radio" id="5" name="uitleg" value="5">
+                </label>
+                <label>
+                    6
+                    <input type="radio" id="6" name="uitleg" value="6">
+                </label>
+                <label>
+                    7
+                    <input type="radio" id="7" name="uitleg" value="7">
+                </label>
+                <label>
+                    8
+                    <input type="radio" id="8" name="uitleg" value="8">
+                </label>
+                <label>
+                    9
+                    <input type="radio" id="9" name="uitleg" value="9">
+                </label>
+                <label>
+                    10
+                    <input type="radio" id="10" name="uitleg" value="10">
+                </label>
+            </section>
+            <p>Eigen inzicht</p>
+            <section class="radio">
+                <label>
+                    1
+                    <input type="radio" id="1" name="inzicht" value="1">
+                </label>
+                <label>
+                    2
+                    <input type="radio" id="2" name="inzicht" value="2">
+                </label>
+                <label>
+                    3
+                    <input type="radio" id="3" name="inzicht" value="3">
+                </label>
+                <label>
+                    4
+                    <input type="radio" id="4" name="inzicht" value="4">
+                </label>
+                <label>
+                    5
+                    <input type="radio" id="5" name="inzicht" value="5">
+                </label>
+                <label>
+                    6
+                    <input type="radio" id="6" name="inzicht" value="6">
+                </label>
+                <label>
+                    7
+                    <input type="radio" id="7" name="inzicht" value="7">
+                </label>
+                <label>
+                    8
+                    <input type="radio" id="8" name="inzicht" value="8">
+                </label>
+                <label>
+                    9
+                    <input type="radio" id="9" name="inzicht" value="9">
+                </label>
+                <label>
+                    10
+                    <input type="radio" id="10" name="inzicht" value="10">
+                </label>
+            </section>
+            <section class="opmerkingen">
+                <label>
+                    Opmerkingen
+                    <textarea name="opmerkingen" rows="5" cols="50"></textarea>
+                </label>
+            </section>
+            <section class="buttons">
+                <button id="previous">Terug</button>
+                <button id="next">Volgende</button>
+            </section>
+        </fieldset>
+        <fieldset>
+            <legend>Web App from Scratch</legend>
+            <p>Lesstof</p>
+            <section class="radio">
+                <label>
+                    1
+                    <input type="radio" id="1" name="lesstof" value="1">
+                </label>
+                <label>
+                    2
+                    <input type="radio" id="2" name="lesstof" value="2">
+                </label>
+                <label>
+                    3
+                    <input type="radio" id="3" name="lesstof" value="3">
+                </label>
+                <label>
+                    4
+                    <input type="radio" id="4" name="lesstof" value="4">
+                </label>
+                <label>
+                    5
+                    <input type="radio" id="5" name="lesstof" value="5">
+                </label>
+                <label>
+                    6
+                    <input type="radio" id="6" name="lesstof" value="6">
+                </label>
+                <label>
+                    7
+                    <input type="radio" id="7" name="lesstof" value="7">
+                </label>
+                <label>
+                    8
+                    <input type="radio" id="8" name="lesstof" value="8">
+                </label>
+                <label>
+                    9
+                    <input type="radio" id="9" name="lesstof" value="9">
+                </label>
+                <label>
+                    10
+                    <input type="radio" id="10" name="lesstof" value="10">
+                </label>
+            </section>
+            <p>Uitleg</p>
+            <section class="radio">
+                <label>
+                    1
+                    <input type="radio" id="1" name="uitleg" value="1">
+                </label>
+                <label>
+                    2
+                    <input type="radio" id="2" name="uitleg" value="2">
+                </label>
+                <label>
+                    3
+                    <input type="radio" id="3" name="uitleg" value="3">
+                </label>
+                <label>
+                    4
+                    <input type="radio" id="4" name="uitleg" value="4">
+                </label>
+                <label>
+                    5
+                    <input type="radio" id="5" name="uitleg" value="5">
+                </label>
+                <label>
+                    6
+                    <input type="radio" id="6" name="uitleg" value="6">
+                </label>
+                <label>
+                    7
+                    <input type="radio" id="7" name="uitleg" value="7">
+                </label>
+                <label>
+                    8
+                    <input type="radio" id="8" name="uitleg" value="8">
+                </label>
+                <label>
+                    9
+                    <input type="radio" id="9" name="uitleg" value="9">
+                </label>
+                <label>
+                    10
+                    <input type="radio" id="10" name="uitleg" value="10">
+                </label>
+            </section>
+            <p>Eigen inzicht</p>
+            <section class="radio">
+                <label>
+                    1
+                    <input type="radio" id="1" name="inzicht" value="1">
+                </label>
+                <label>
+                    2
+                    <input type="radio" id="2" name="inzicht" value="2">
+                </label>
+                <label>
+                    3
+                    <input type="radio" id="3" name="inzicht" value="3">
+                </label>
+                <label>
+                    4
+                    <input type="radio" id="4" name="inzicht" value="4">
+                </label>
+                <label>
+                    5
+                    <input type="radio" id="5" name="inzicht" value="5">
+                </label>
+                <label>
+                    6
+                    <input type="radio" id="6" name="inzicht" value="6">
+                </label>
+                <label>
+                    7
+                    <input type="radio" id="7" name="inzicht" value="7">
+                </label>
+                <label>
+                    8
+                    <input type="radio" id="8" name="inzicht" value="8">
+                </label>
+                <label>
+                    9
+                    <input type="radio" id="9" name="inzicht" value="9">
+                </label>
+                <label>
+                    10
+                    <input type="radio" id="10" name="inzicht" value="10">
+                </label>
+            </section>
+            <section class="opmerkingen">
+                <label>
+                    Opmerkingen
+                    <textarea name="opmerkingen" rows="5" cols="50"></textarea>
+                </label>
+            </section>
+        </fieldset>
+        <fieldset>
+            <legend>Web App from Scratch</legend>
+            <p>Lesstof</p>
+            <section class="radio">
+                <label>
+                    1
+                    <input type="radio" id="1" name="lesstof" value="1">
+                </label>
+                <label>
+                    2
+                    <input type="radio" id="2" name="lesstof" value="2">
+                </label>
+                <label>
+                    3
+                    <input type="radio" id="3" name="lesstof" value="3">
+                </label>
+                <label>
+                    4
+                    <input type="radio" id="4" name="lesstof" value="4">
+                </label>
+                <label>
+                    5
+                    <input type="radio" id="5" name="lesstof" value="5">
+                </label>
+                <label>
+                    6
+                    <input type="radio" id="6" name="lesstof" value="6">
+                </label>
+                <label>
+                    7
+                    <input type="radio" id="7" name="lesstof" value="7">
+                </label>
+                <label>
+                    8
+                    <input type="radio" id="8" name="lesstof" value="8">
+                </label>
+                <label>
+                    9
+                    <input type="radio" id="9" name="lesstof" value="9">
+                </label>
+                <label>
+                    10
+                    <input type="radio" id="10" name="lesstof" value="10">
+                </label>
+            </section>
+            <p>Uitleg</p>
+            <section class="radio">
+                <label>
+                    1
+                    <input type="radio" id="1" name="uitleg" value="1">
+                </label>
+                <label>
+                    2
+                    <input type="radio" id="2" name="uitleg" value="2">
+                </label>
+                <label>
+                    3
+                    <input type="radio" id="3" name="uitleg" value="3">
+                </label>
+                <label>
+                    4
+                    <input type="radio" id="4" name="uitleg" value="4">
+                </label>
+                <label>
+                    5
+                    <input type="radio" id="5" name="uitleg" value="5">
+                </label>
+                <label>
+                    6
+                    <input type="radio" id="6" name="uitleg" value="6">
+                </label>
+                <label>
+                    7
+                    <input type="radio" id="7" name="uitleg" value="7">
+                </label>
+                <label>
+                    8
+                    <input type="radio" id="8" name="uitleg" value="8">
+                </label>
+                <label>
+                    9
+                    <input type="radio" id="9" name="uitleg" value="9">
+                </label>
+                <label>
+                    10
+                    <input type="radio" id="10" name="uitleg" value="10">
+                </label>
+            </section>
+            <p>Eigen inzicht</p>
+            <section class="radio">
+                <label>
+                    1
+                    <input type="radio" id="1" name="inzicht" value="1">
+                </label>
+                <label>
+                    2
+                    <input type="radio" id="2" name="inzicht" value="2">
+                </label>
+                <label>
+                    3
+                    <input type="radio" id="3" name="inzicht" value="3">
+                </label>
+                <label>
+                    4
+                    <input type="radio" id="4" name="inzicht" value="4">
+                </label>
+                <label>
+                    5
+                    <input type="radio" id="5" name="inzicht" value="5">
+                </label>
+                <label>
+                    6
+                    <input type="radio" id="6" name="inzicht" value="6">
+                </label>
+                <label>
+                    7
+                    <input type="radio" id="7" name="inzicht" value="7">
+                </label>
+                <label>
+                    8
+                    <input type="radio" id="8" name="inzicht" value="8">
+                </label>
+                <label>
+                    9
+                    <input type="radio" id="9" name="inzicht" value="9">
+                </label>
+                <label>
+                    10
+                    <input type="radio" id="10" name="inzicht" value="10">
+                </label>
+            </section>
+            <section class="opmerkingen">
+                <label>
+                    Opmerkingen
+                    <textarea name="opmerkingen" rows="5" cols="50"></textarea>
+                </label>
+            </section>
+        </fieldset>
+        <fieldset>
+            <legend>Web App from Scratch</legend>
+            <p>Lesstof</p>
+            <section class="radio">
+                <label>
+                    1
+                    <input type="radio" id="1" name="lesstof" value="1">
+                </label>
+                <label>
+                    2
+                    <input type="radio" id="2" name="lesstof" value="2">
+                </label>
+                <label>
+                    3
+                    <input type="radio" id="3" name="lesstof" value="3">
+                </label>
+                <label>
+                    4
+                    <input type="radio" id="4" name="lesstof" value="4">
+                </label>
+                <label>
+                    5
+                    <input type="radio" id="5" name="lesstof" value="5">
+                </label>
+                <label>
+                    6
+                    <input type="radio" id="6" name="lesstof" value="6">
+                </label>
+                <label>
+                    7
+                    <input type="radio" id="7" name="lesstof" value="7">
+                </label>
+                <label>
+                    8
+                    <input type="radio" id="8" name="lesstof" value="8">
+                </label>
+                <label>
+                    9
+                    <input type="radio" id="9" name="lesstof" value="9">
+                </label>
+                <label>
+                    10
+                    <input type="radio" id="10" name="lesstof" value="10">
+                </label>
+            </section>
+            <p>Uitleg</p>
+            <section class="radio">
+                <label>
+                    1
+                    <input type="radio" id="1" name="uitleg" value="1">
+                </label>
+                <label>
+                    2
+                    <input type="radio" id="2" name="uitleg" value="2">
+                </label>
+                <label>
+                    3
+                    <input type="radio" id="3" name="uitleg" value="3">
+                </label>
+                <label>
+                    4
+                    <input type="radio" id="4" name="uitleg" value="4">
+                </label>
+                <label>
+                    5
+                    <input type="radio" id="5" name="uitleg" value="5">
+                </label>
+                <label>
+                    6
+                    <input type="radio" id="6" name="uitleg" value="6">
+                </label>
+                <label>
+                    7
+                    <input type="radio" id="7" name="uitleg" value="7">
+                </label>
+                <label>
+                    8
+                    <input type="radio" id="8" name="uitleg" value="8">
+                </label>
+                <label>
+                    9
+                    <input type="radio" id="9" name="uitleg" value="9">
+                </label>
+                <label>
+                    10
+                    <input type="radio" id="10" name="uitleg" value="10">
+                </label>
+            </section>
+            <p>Eigen inzicht</p>
+            <section class="radio">
+                <label>
+                    1
+                    <input type="radio" id="1" name="inzicht" value="1">
+                </label>
+                <label>
+                    2
+                    <input type="radio" id="2" name="inzicht" value="2">
+                </label>
+                <label>
+                    3
+                    <input type="radio" id="3" name="inzicht" value="3">
+                </label>
+                <label>
+                    4
+                    <input type="radio" id="4" name="inzicht" value="4">
+                </label>
+                <label>
+                    5
+                    <input type="radio" id="5" name="inzicht" value="5">
+                </label>
+                <label>
+                    6
+                    <input type="radio" id="6" name="inzicht" value="6">
+                </label>
+                <label>
+                    7
+                    <input type="radio" id="7" name="inzicht" value="7">
+                </label>
+                <label>
+                    8
+                    <input type="radio" id="8" name="inzicht" value="8">
+                </label>
+                <label>
+                    9
+                    <input type="radio" id="9" name="inzicht" value="9">
+                </label>
+                <label>
+                    10
+                    <input type="radio" id="10" name="inzicht" value="10">
+                </label>
+            </section>
+            <section class="opmerkingen">
+                <label>
+                    Opmerkingen
+                    <textarea name="opmerkingen" rows="5" cols="50"></textarea>
+                </label>
+            </section>
+        </fieldset>
+        <fieldset>
+            <legend>Web App from Scratch</legend>
+            <p>Lesstof</p>
+            <section class="radio">
+                <label>
+                    1
+                    <input type="radio" id="1" name="lesstof" value="1">
+                </label>
+                <label>
+                    2
+                    <input type="radio" id="2" name="lesstof" value="2">
+                </label>
+                <label>
+                    3
+                    <input type="radio" id="3" name="lesstof" value="3">
+                </label>
+                <label>
+                    4
+                    <input type="radio" id="4" name="lesstof" value="4">
+                </label>
+                <label>
+                    5
+                    <input type="radio" id="5" name="lesstof" value="5">
+                </label>
+                <label>
+                    6
+                    <input type="radio" id="6" name="lesstof" value="6">
+                </label>
+                <label>
+                    7
+                    <input type="radio" id="7" name="lesstof" value="7">
+                </label>
+                <label>
+                    8
+                    <input type="radio" id="8" name="lesstof" value="8">
+                </label>
+                <label>
+                    9
+                    <input type="radio" id="9" name="lesstof" value="9">
+                </label>
+                <label>
+                    10
+                    <input type="radio" id="10" name="lesstof" value="10">
+                </label>
+            </section>
+            <p>Uitleg</p>
+            <section class="radio">
+                <label>
+                    1
+                    <input type="radio" id="1" name="uitleg" value="1">
+                </label>
+                <label>
+                    2
+                    <input type="radio" id="2" name="uitleg" value="2">
+                </label>
+                <label>
+                    3
+                    <input type="radio" id="3" name="uitleg" value="3">
+                </label>
+                <label>
+                    4
+                    <input type="radio" id="4" name="uitleg" value="4">
+                </label>
+                <label>
+                    5
+                    <input type="radio" id="5" name="uitleg" value="5">
+                </label>
+                <label>
+                    6
+                    <input type="radio" id="6" name="uitleg" value="6">
+                </label>
+                <label>
+                    7
+                    <input type="radio" id="7" name="uitleg" value="7">
+                </label>
+                <label>
+                    8
+                    <input type="radio" id="8" name="uitleg" value="8">
+                </label>
+                <label>
+                    9
+                    <input type="radio" id="9" name="uitleg" value="9">
+                </label>
+                <label>
+                    10
+                    <input type="radio" id="10" name="uitleg" value="10">
+                </label>
+            </section>
+            <p>Eigen inzicht</p>
+            <section class="radio">
+                <label>
+                    1
+                    <input type="radio" id="1" name="inzicht" value="1">
+                </label>
+                <label>
+                    2
+                    <input type="radio" id="2" name="inzicht" value="2">
+                </label>
+                <label>
+                    3
+                    <input type="radio" id="3" name="inzicht" value="3">
+                </label>
+                <label>
+                    4
+                    <input type="radio" id="4" name="inzicht" value="4">
+                </label>
+                <label>
+                    5
+                    <input type="radio" id="5" name="inzicht" value="5">
+                </label>
+                <label>
+                    6
+                    <input type="radio" id="6" name="inzicht" value="6">
+                </label>
+                <label>
+                    7
+                    <input type="radio" id="7" name="inzicht" value="7">
+                </label>
+                <label>
+                    8
+                    <input type="radio" id="8" name="inzicht" value="8">
+                </label>
+                <label>
+                    9
+                    <input type="radio" id="9" name="inzicht" value="9">
+                </label>
+                <label>
+                    10
+                    <input type="radio" id="10" name="inzicht" value="10">
+                </label>
+            </section>
+            <section class="opmerkingen">
+                <label>
+                    Opmerkingen
+                    <textarea name="opmerkingen" rows="5" cols="50"></textarea>
+                </label>
+            </section>
+        </fieldset>
+        <fieldset>
+            <legend>Web App from Scratch</legend>
+            <p>Lesstof</p>
+            <section class="radio">
+                <label>
+                    1
+                    <input type="radio" id="1" name="lesstof" value="1">
+                </label>
+                <label>
+                    2
+                    <input type="radio" id="2" name="lesstof" value="2">
+                </label>
+                <label>
+                    3
+                    <input type="radio" id="3" name="lesstof" value="3">
+                </label>
+                <label>
+                    4
+                    <input type="radio" id="4" name="lesstof" value="4">
+                </label>
+                <label>
+                    5
+                    <input type="radio" id="5" name="lesstof" value="5">
+                </label>
+                <label>
+                    6
+                    <input type="radio" id="6" name="lesstof" value="6">
+                </label>
+                <label>
+                    7
+                    <input type="radio" id="7" name="lesstof" value="7">
+                </label>
+                <label>
+                    8
+                    <input type="radio" id="8" name="lesstof" value="8">
+                </label>
+                <label>
+                    9
+                    <input type="radio" id="9" name="lesstof" value="9">
+                </label>
+                <label>
+                    10
+                    <input type="radio" id="10" name="lesstof" value="10">
+                </label>
+            </section>
+            <p>Uitleg</p>
+            <section class="radio">
+                <label>
+                    1
+                    <input type="radio" id="1" name="uitleg" value="1">
+                </label>
+                <label>
+                    2
+                    <input type="radio" id="2" name="uitleg" value="2">
+                </label>
+                <label>
+                    3
+                    <input type="radio" id="3" name="uitleg" value="3">
+                </label>
+                <label>
+                    4
+                    <input type="radio" id="4" name="uitleg" value="4">
+                </label>
+                <label>
+                    5
+                    <input type="radio" id="5" name="uitleg" value="5">
+                </label>
+                <label>
+                    6
+                    <input type="radio" id="6" name="uitleg" value="6">
+                </label>
+                <label>
+                    7
+                    <input type="radio" id="7" name="uitleg" value="7">
+                </label>
+                <label>
+                    8
+                    <input type="radio" id="8" name="uitleg" value="8">
+                </label>
+                <label>
+                    9
+                    <input type="radio" id="9" name="uitleg" value="9">
+                </label>
+                <label>
+                    10
+                    <input type="radio" id="10" name="uitleg" value="10">
+                </label>
+            </section>
+            <p>Eigen inzicht</p>
+            <section class="radio">
+                <label>
+                    1
+                    <input type="radio" id="1" name="inzicht" value="1">
+                </label>
+                <label>
+                    2
+                    <input type="radio" id="2" name="inzicht" value="2">
+                </label>
+                <label>
+                    3
+                    <input type="radio" id="3" name="inzicht" value="3">
+                </label>
+                <label>
+                    4
+                    <input type="radio" id="4" name="inzicht" value="4">
+                </label>
+                <label>
+                    5
+                    <input type="radio" id="5" name="inzicht" value="5">
+                </label>
+                <label>
+                    6
+                    <input type="radio" id="6" name="inzicht" value="6">
+                </label>
+                <label>
+                    7
+                    <input type="radio" id="7" name="inzicht" value="7">
+                </label>
+                <label>
+                    8
+                    <input type="radio" id="8" name="inzicht" value="8">
+                </label>
+                <label>
+                    9
+                    <input type="radio" id="9" name="inzicht" value="9">
+                </label>
+                <label>
+                    10
+                    <input type="radio" id="10" name="inzicht" value="10">
+                </label>
+            </section>
+            <section class="opmerkingen">
+                <label>
+                    Opmerkingen
+                    <textarea name="opmerkingen" rows="5" cols="50"></textarea>
+                </label>
+            </section>
+        </fieldset>
+        <input type="submit" value="Inleveren">
+    </form>
+</body>
+</html>
