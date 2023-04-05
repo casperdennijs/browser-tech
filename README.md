@@ -12,3 +12,7 @@ Voor Browser Technologies heb ik gekozen om aan de enquete te gaan werken. Hierv
 - De website is gemaakt op Chrome Versie 111.0.5563.147 op een Windows 10 laptop
 - Het moet nog getest worden op Firefox en Safari
 - Als obscure browser heb ik gekozen voor UC Browser op Android
+
+## Todo
+- Goed doorgrondig testen van de website op verschillende browsers
+- HTML alleen werkt en HTML, CSS en JS werkt, maar HTML en CSS niet
