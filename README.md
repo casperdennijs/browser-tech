@@ -91,3 +91,8 @@ Ik heb voor de browsers die geen :has selector supporten ervoor gezorgd dat de r
     }
 }
 ```
+## Firefox
+![image](https://github.com/casperdennijs/browser-tech/assets/56598338/b9daae1e-712a-4f6d-8c45-063f1edd5f29)
+
+## UC Browser (obscure browser)
+![image](https://github.com/casperdennijs/browser-tech/assets/56598338/a57bc251-73dc-44e0-9862-3b605998c17d)
