@@ -5,25 +5,25 @@
     
 }
 
-html, body {
+html {
     height: 100%;
 }
 
 body {
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     font-family: Arial, Helvetica, sans-serif;
     padding: 1em;
     position: relative;
     background-color: #4158D0;
     background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 body > h1 {
-    position: absolute;
-    top: 120px;
     color: white;
     text-shadow: 0px 5px 5px rgba(0,0,0,0.2);
     font-size: 3em;
@@ -49,7 +49,6 @@ form {
 }
 
 form fieldset {
-    display: none;
     position: relative;
     padding: 1em;
     margin: 1.5em 0;
@@ -60,8 +59,7 @@ form fieldset {
     -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.2);
     box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.2);
     z-index: 2;
-    min-height: 650px;
-    height: 100%;
+    height: max-content;
 }
 
 form fieldset legend {
@@ -73,7 +71,6 @@ form fieldset legend {
 form section {
     display: flex;
     align-items: center;
-    margin-bottom: 1em;
 }
 
 form section p {
@@ -139,7 +136,9 @@ form .radio:not(:last-child) label:last-child {
 }
 
 form label input[type=radio] {
-    display: none;
+    opacity: 0;
+    height: 1px;
+    width: 1px;
 }
 
 form input[type=submit] {
@@ -159,16 +158,14 @@ form .opmerkingen textarea {
 }
 
 form .buttons {
-    display: none;
-    position: absolute;
     bottom: 1em;
-    width: calc(100% - 2em);
+    width: 100%;
+    margin-top: 1em;
 }
 
 form .buttons.js-active {
     display: flex;
     justify-content: space-between;
-    margin: 1em 0 0 0;
 }
 
 input[type=text] {
@@ -210,14 +207,56 @@ textarea {
     margin-bottom: 1em;
 }
 
-.hidden { 
-    display: none;
-}
-
 .current {
     display: block;
 }
 
+.hidden {
+    display: none;
+}
+
 form section:has(input[type=radio]:checked) {
     border: 2px solid green;
+}
+
+form section:has(input[type=radio]:invalid) {
+    border: 2px solid red;
+}
+
+.progress {
+    display: flex;
+    gap: 1em;
+    margin-top: 1em;
+}
+
+.step {
+    width: 30px;
+    height: 30px;
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.step:hover {
+    background-color: white;
+}
+
+.currently {
+    background-color: white;
+}
+
+.error {
+    display: block;
+    background-color: red;
+    color: white;
+    text-align: center;
+    width: 100%;
+    padding: .5em 0;
+    border-radius: 10px;
+    margin: 0;
+    margin-top: 1em;
 }
