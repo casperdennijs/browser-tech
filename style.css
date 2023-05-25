@@ -109,36 +109,12 @@ form .radio:not(:last-child) label:hover {
     background-color: lightgray;
 }
 
-form .radio:not(:last-child) label:has(input:checked) {
-    background-color: rgb(202, 202, 255);
-    font-weight: bold;
-    font-size: 1.5em;
-}
-
-form .radio:not(:last-child) label:has(input:checked):before {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: -1000%;
-    width: 1000%;
-    background-color: rgb(202, 202, 255);
-    pointer-events: none;
-    z-index: 3;
-}
-
 form .radio:not(:last-child) label:first-child {
     border-radius: 100% 0 0 100%;
 }
 
 form .radio:not(:last-child) label:last-child {
     border-radius: 0 100% 100% 0;
-}
-
-form label input[type=radio] {
-    opacity: 0;
-    height: 1px;
-    width: 1px;
 }
 
 form input[type=submit] {
@@ -215,14 +191,6 @@ textarea {
     display: none;
 }
 
-form section:has(input[type=radio]:checked) {
-    border: 2px solid green;
-}
-
-form section:has(input[type=radio]:invalid) {
-    border: 2px solid red;
-}
-
 .progress {
     display: flex;
     gap: 1em;
@@ -259,4 +227,38 @@ form section:has(input[type=radio]:invalid) {
     border-radius: 10px;
     margin: 0;
     margin-top: 1em;
+}
+
+@supports selector(:has(*)) {
+    form label input[type=radio] {
+        opacity: 0;
+        height: 1px;
+        width: 1px;
+    }
+
+    form .radio:not(:last-child) label:has(input:checked) {
+        background-color: rgb(202, 202, 255);
+        font-weight: bold;
+        font-size: 1.5em;
+    }
+    
+    form .radio:not(:last-child) label:has(input:checked):before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: -1000%;
+        width: 1000%;
+        background-color: rgb(202, 202, 255);
+        pointer-events: none;
+        z-index: 3;
+    }
+
+    form section:has(input[type=radio]:checked) {
+        border: 2px solid green;
+    }
+    
+    form section:has(input[type=radio]:invalid) {
+        border: 2px solid red;
+    }
 }
